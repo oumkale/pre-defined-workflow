@@ -1,0 +1,29 @@
+# FROM alpine:3.6
+# RUN apk -v --update add \
+#         python \
+#         py-pip \
+#         groff \
+#         less \
+#         mailcap \
+#         && \
+#     pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
+#     apk -v --purge del py-pip && \
+#     rm /var/cache/apk/*
+# VOLUME /root/.aws
+# VOLUME /project
+# WORKDIR /project
+# ENTRYPOINT ["aws"]
+#https://hub.docker.com/r/woahbase/alpine-awscli
+# git clone https://github.com/woahbase/alpine-awscli
+# cd alpine-awscli
+#https://stackoverflow.com/questions/23778442/how-to-use-awscli-inside-python-script
+
+
+
+# import subprocess
+# push=subprocess.run(['aws', 's3', 'ls', '--recursive', '--human-readable', '--summarize'])
+# or import sh
+
+
+
+# https://boto.readthedocs.io/en/latest/ec2_tut.html
